@@ -2,7 +2,7 @@
   "name": "ibm_test",
   "version": "1.0.0",
   "description": "IBM test app",
-  "main": "index.js",
+  "main": "node index.js",
   "scripts": {
     "start": "index.js",
     "test": "xo && npm run mocha",
