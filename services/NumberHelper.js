@@ -1,22 +1,3 @@
-module.exports = {
-  generatePrimeNumbers(n) {
-    let count = 0;
-    let i = 2;
-    const primes = [];
-    const maxCount = n;
-
-    while (count < maxCount) {
-      if (isPrime(i)) {
-        primes.push(i);
-        count++;
-      }
-      i++;
-    }
-
-    return primes;
-  }
-};
-
 function isPrime(n) {
   if (n % 1 || n < 2) {
     return false;
@@ -31,3 +12,25 @@ function isPrime(n) {
   }
   return true;
 }
+
+function generatePrimeNumbers(n) {
+  let count = 0;
+  let i = 2;
+  const primes = [];
+  const maxCount = n;
+
+  while (count < maxCount) {
+    if (isPrime(i)) {
+      primes.push(i);
+      count++;
+    }
+    i++;
+  }
+
+  return primes;
+}
+
+module.exports = {
+  generatePrimeNumbers,
+  isPrime
+};
