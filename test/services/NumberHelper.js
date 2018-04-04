@@ -35,8 +35,12 @@ describe('NumberHelper', () => {
       expect(NumberHelper.generatePrimeNumbers).to.be.a('function');
     });
 
-    it('should return [ 2 ] with param 1', () => {
+    it('should return [] with param 1', () => {
+      expect(NumberHelper.generatePrimeNumbers(1)).to.deep.equal([]);
+    })
 
+    it('should return [ 2 ] with param 2', () => {
+      expect(NumberHelper.generatePrimeNumbers(2)).to.deep.equal([2]);
     })
   });
 
