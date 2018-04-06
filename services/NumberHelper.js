@@ -31,13 +31,29 @@ function sumPrimes(n) {
   const primes = generatePrimeNumbers(n);
   for (let p = 0; p < primes.length; p++) {
     sum += primes[p];
+    console.log('Sum: ' + sum + ' and Primes: ' + primes[p]);
   }
 
   return sum;
 }
 
+function findTheSame(primeNumber, sum) {
+  const pom = [];
+  let counter = 0;
+
+  while (counter < sum) {
+    pom.push(primeNumber);
+    counter += primeNumber;
+    if (counter.toString() === sum.toString()) {
+      return pom;
+    }
+  }
+  return -1;
+}
+
 module.exports = {
   generatePrimeNumbers,
   isPrime,
-  sumPrimes
+  sumPrimes,
+  findTheSame
 };

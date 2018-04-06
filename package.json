@@ -34,7 +34,7 @@
   },
   "xo": {
     "space": true,
-    "ignores": "test/services/NumberHelper.js",
+    "ignores": ["test/services/*.js" , "test/*.js"],
     "rules": {
       "unicorn/filename-case": "camelcase"
     }

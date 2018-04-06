@@ -52,5 +52,9 @@ describe('NumberHelper', () => {
     it('returns 17 with param 10', () => {
       expect(NumberHelper.sumPrimes(10)).to.deep.equal(17);
     });
+
+    it('returns 5 with param 2', () => {
+      expect(NumberHelper.sumPrimes(3)).to.deep.equal(5);
+    });
   });
 });
