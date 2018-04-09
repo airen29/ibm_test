@@ -31,7 +31,6 @@ function sumPrimes(n) {
   const primes = generatePrimeNumbers(n);
   for (let p = 0; p < primes.length; p++) {
     sum += primes[p];
-    console.log('Sum: ' + sum + ' and Primes: ' + primes[p]);
   }
 
   return sum;
